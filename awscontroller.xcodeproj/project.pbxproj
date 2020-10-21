@@ -1,0 +1,597 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		26F204092540D9E3007D3AA3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26F204082540D9E3007D3AA3 /* AppDelegate.swift */; };
+		26F2040B2540D9E3007D3AA3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26F2040A2540D9E3007D3AA3 /* ContentView.swift */; };
+		26F2040D2540D9E4007D3AA3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26F2040C2540D9E4007D3AA3 /* Assets.xcassets */; };
+		26F204102540D9E4007D3AA3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26F2040F2540D9E4007D3AA3 /* Preview Assets.xcassets */; };
+		26F204132540D9E4007D3AA3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26F204112540D9E4007D3AA3 /* Main.storyboard */; };
+		26F2041F2540D9E4007D3AA3 /* awscontrollerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26F2041E2540D9E4007D3AA3 /* awscontrollerTests.swift */; };
+		26F2042A2540D9E4007D3AA3 /* awscontrollerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26F204292540D9E4007D3AA3 /* awscontrollerUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		26F2041B2540D9E4007D3AA3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 26F203FD2540D9E3007D3AA3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 26F204042540D9E3007D3AA3;
+			remoteInfo = awscontroller;
+		};
+		26F204262540D9E4007D3AA3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 26F203FD2540D9E3007D3AA3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 26F204042540D9E3007D3AA3;
+			remoteInfo = awscontroller;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		26F204052540D9E3007D3AA3 /* awscontroller.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = awscontroller.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		26F204082540D9E3007D3AA3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		26F2040A2540D9E3007D3AA3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		26F2040C2540D9E4007D3AA3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		26F2040F2540D9E4007D3AA3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		26F204122540D9E4007D3AA3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		26F204142540D9E4007D3AA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		26F204152540D9E4007D3AA3 /* awscontroller.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = awscontroller.entitlements; sourceTree = "<group>"; };
+		26F2041A2540D9E4007D3AA3 /* awscontrollerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = awscontrollerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		26F2041E2540D9E4007D3AA3 /* awscontrollerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = awscontrollerTests.swift; sourceTree = "<group>"; };
+		26F204202540D9E4007D3AA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		26F204252540D9E4007D3AA3 /* awscontrollerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = awscontrollerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		26F204292540D9E4007D3AA3 /* awscontrollerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = awscontrollerUITests.swift; sourceTree = "<group>"; };
+		26F2042B2540D9E4007D3AA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		26F204022540D9E3007D3AA3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26F204172540D9E4007D3AA3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26F204222540D9E4007D3AA3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		26F203FC2540D9E3007D3AA3 = {
+			isa = PBXGroup;
+			children = (
+				26F204072540D9E3007D3AA3 /* awscontroller */,
+				26F2041D2540D9E4007D3AA3 /* awscontrollerTests */,
+				26F204282540D9E4007D3AA3 /* awscontrollerUITests */,
+				26F204062540D9E3007D3AA3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		26F204062540D9E3007D3AA3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				26F204052540D9E3007D3AA3 /* awscontroller.app */,
+				26F2041A2540D9E4007D3AA3 /* awscontrollerTests.xctest */,
+				26F204252540D9E4007D3AA3 /* awscontrollerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		26F204072540D9E3007D3AA3 /* awscontroller */ = {
+			isa = PBXGroup;
+			children = (
+				26F204082540D9E3007D3AA3 /* AppDelegate.swift */,
+				26F2040A2540D9E3007D3AA3 /* ContentView.swift */,
+				26F2040C2540D9E4007D3AA3 /* Assets.xcassets */,
+				26F204112540D9E4007D3AA3 /* Main.storyboard */,
+				26F204142540D9E4007D3AA3 /* Info.plist */,
+				26F204152540D9E4007D3AA3 /* awscontroller.entitlements */,
+				26F2040E2540D9E4007D3AA3 /* Preview Content */,
+			);
+			path = awscontroller;
+			sourceTree = "<group>";
+		};
+		26F2040E2540D9E4007D3AA3 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				26F2040F2540D9E4007D3AA3 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		26F2041D2540D9E4007D3AA3 /* awscontrollerTests */ = {
+			isa = PBXGroup;
+			children = (
+				26F2041E2540D9E4007D3AA3 /* awscontrollerTests.swift */,
+				26F204202540D9E4007D3AA3 /* Info.plist */,
+			);
+			path = awscontrollerTests;
+			sourceTree = "<group>";
+		};
+		26F204282540D9E4007D3AA3 /* awscontrollerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				26F204292540D9E4007D3AA3 /* awscontrollerUITests.swift */,
+				26F2042B2540D9E4007D3AA3 /* Info.plist */,
+			);
+			path = awscontrollerUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		26F204042540D9E3007D3AA3 /* awscontroller */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 26F2042E2540D9E4007D3AA3 /* Build configuration list for PBXNativeTarget "awscontroller" */;
+			buildPhases = (
+				26F204012540D9E3007D3AA3 /* Sources */,
+				26F204022540D9E3007D3AA3 /* Frameworks */,
+				26F204032540D9E3007D3AA3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = awscontroller;
+			productName = awscontroller;
+			productReference = 26F204052540D9E3007D3AA3 /* awscontroller.app */;
+			productType = "com.apple.product-type.application";
+		};
+		26F204192540D9E4007D3AA3 /* awscontrollerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 26F204312540D9E4007D3AA3 /* Build configuration list for PBXNativeTarget "awscontrollerTests" */;
+			buildPhases = (
+				26F204162540D9E4007D3AA3 /* Sources */,
+				26F204172540D9E4007D3AA3 /* Frameworks */,
+				26F204182540D9E4007D3AA3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				26F2041C2540D9E4007D3AA3 /* PBXTargetDependency */,
+			);
+			name = awscontrollerTests;
+			productName = awscontrollerTests;
+			productReference = 26F2041A2540D9E4007D3AA3 /* awscontrollerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		26F204242540D9E4007D3AA3 /* awscontrollerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 26F204342540D9E4007D3AA3 /* Build configuration list for PBXNativeTarget "awscontrollerUITests" */;
+			buildPhases = (
+				26F204212540D9E4007D3AA3 /* Sources */,
+				26F204222540D9E4007D3AA3 /* Frameworks */,
+				26F204232540D9E4007D3AA3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				26F204272540D9E4007D3AA3 /* PBXTargetDependency */,
+			);
+			name = awscontrollerUITests;
+			productName = awscontrollerUITests;
+			productReference = 26F204252540D9E4007D3AA3 /* awscontrollerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		26F203FD2540D9E3007D3AA3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					26F204042540D9E3007D3AA3 = {
+						CreatedOnToolsVersion = 12.0.1;
+					};
+					26F204192540D9E4007D3AA3 = {
+						CreatedOnToolsVersion = 12.0.1;
+						TestTargetID = 26F204042540D9E3007D3AA3;
+					};
+					26F204242540D9E4007D3AA3 = {
+						CreatedOnToolsVersion = 12.0.1;
+						TestTargetID = 26F204042540D9E3007D3AA3;
+					};
+				};
+			};
+			buildConfigurationList = 26F204002540D9E3007D3AA3 /* Build configuration list for PBXProject "awscontroller" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 26F203FC2540D9E3007D3AA3;
+			productRefGroup = 26F204062540D9E3007D3AA3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				26F204042540D9E3007D3AA3 /* awscontroller */,
+				26F204192540D9E4007D3AA3 /* awscontrollerTests */,
+				26F204242540D9E4007D3AA3 /* awscontrollerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		26F204032540D9E3007D3AA3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26F204132540D9E4007D3AA3 /* Main.storyboard in Resources */,
+				26F204102540D9E4007D3AA3 /* Preview Assets.xcassets in Resources */,
+				26F2040D2540D9E4007D3AA3 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26F204182540D9E4007D3AA3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26F204232540D9E4007D3AA3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		26F204012540D9E3007D3AA3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26F2040B2540D9E3007D3AA3 /* ContentView.swift in Sources */,
+				26F204092540D9E3007D3AA3 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26F204162540D9E4007D3AA3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26F2041F2540D9E4007D3AA3 /* awscontrollerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26F204212540D9E4007D3AA3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26F2042A2540D9E4007D3AA3 /* awscontrollerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		26F2041C2540D9E4007D3AA3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 26F204042540D9E3007D3AA3 /* awscontroller */;
+			targetProxy = 26F2041B2540D9E4007D3AA3 /* PBXContainerItemProxy */;
+		};
+		26F204272540D9E4007D3AA3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 26F204042540D9E3007D3AA3 /* awscontroller */;
+			targetProxy = 26F204262540D9E4007D3AA3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		26F204112540D9E4007D3AA3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				26F204122540D9E4007D3AA3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		26F2042C2540D9E4007D3AA3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		26F2042D2540D9E4007D3AA3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		26F2042F2540D9E4007D3AA3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = awscontroller/awscontroller.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"awscontroller/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = awscontroller/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = com.codingskies.awscontroller;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		26F204302540D9E4007D3AA3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = awscontroller/awscontroller.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"awscontroller/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = awscontroller/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = com.codingskies.awscontroller;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		26F204322540D9E4007D3AA3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = awscontrollerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = com.codingskies.awscontrollerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/awscontroller.app/Contents/MacOS/awscontroller";
+			};
+			name = Debug;
+		};
+		26F204332540D9E4007D3AA3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = awscontrollerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = com.codingskies.awscontrollerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/awscontroller.app/Contents/MacOS/awscontroller";
+			};
+			name = Release;
+		};
+		26F204352540D9E4007D3AA3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = awscontrollerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.codingskies.awscontrollerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = awscontroller;
+			};
+			name = Debug;
+		};
+		26F204362540D9E4007D3AA3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = awscontrollerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.codingskies.awscontrollerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = awscontroller;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		26F204002540D9E3007D3AA3 /* Build configuration list for PBXProject "awscontroller" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				26F2042C2540D9E4007D3AA3 /* Debug */,
+				26F2042D2540D9E4007D3AA3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		26F2042E2540D9E4007D3AA3 /* Build configuration list for PBXNativeTarget "awscontroller" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				26F2042F2540D9E4007D3AA3 /* Debug */,
+				26F204302540D9E4007D3AA3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		26F204312540D9E4007D3AA3 /* Build configuration list for PBXNativeTarget "awscontrollerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				26F204322540D9E4007D3AA3 /* Debug */,
+				26F204332540D9E4007D3AA3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		26F204342540D9E4007D3AA3 /* Build configuration list for PBXNativeTarget "awscontrollerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				26F204352540D9E4007D3AA3 /* Debug */,
+				26F204362540D9E4007D3AA3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 26F203FD2540D9E3007D3AA3 /* Project object */;
+}
