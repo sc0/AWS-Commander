@@ -3,17 +3,27 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		263102E825432A9D00F4D7F0 /* AWSStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 263102E725432A9D00F4D7F0 /* AWSStatus.swift */; };
+		263102F025432AB200F4D7F0 /* AWSInstanceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 263102EF25432AB200F4D7F0 /* AWSInstanceType.swift */; };
+		263102FE25432B7200F4D7F0 /* JSONWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 263102FD25432B7200F4D7F0 /* JSONWrapper.swift */; };
+		2631030625432BB300F4D7F0 /* AWSParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2631030525432BB300F4D7F0 /* AWSParser.swift */; };
+		26870C1525432D8900D2659F /* MenuSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26870C1425432D8900D2659F /* MenuSection.swift */; };
+		26870C1D25432F7200D2659F /* EC2MenuSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26870C1C25432F7200D2659F /* EC2MenuSection.swift */; };
 		26F204092540D9E3007D3AA3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26F204082540D9E3007D3AA3 /* AppDelegate.swift */; };
-		26F2040B2540D9E3007D3AA3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26F2040A2540D9E3007D3AA3 /* ContentView.swift */; };
 		26F2040D2540D9E4007D3AA3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26F2040C2540D9E4007D3AA3 /* Assets.xcassets */; };
-		26F204102540D9E4007D3AA3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26F2040F2540D9E4007D3AA3 /* Preview Assets.xcassets */; };
 		26F204132540D9E4007D3AA3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26F204112540D9E4007D3AA3 /* Main.storyboard */; };
 		26F2041F2540D9E4007D3AA3 /* awscontrollerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26F2041E2540D9E4007D3AA3 /* awscontrollerTests.swift */; };
 		26F2042A2540D9E4007D3AA3 /* awscontrollerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26F204292540D9E4007D3AA3 /* awscontrollerUITests.swift */; };
+		26F204512540E63D007D3AA3 /* PreferencesWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26F204502540E63D007D3AA3 /* PreferencesWindow.swift */; };
+		26F2045E2540F7E8007D3AA3 /* Preferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26F2045D2540F7E8007D3AA3 /* Preferences.swift */; };
+		26F204682541A373007D3AA3 /* CLIExecutor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26F204672541A373007D3AA3 /* CLIExecutor.swift */; };
+		26F2046E2541A4DC007D3AA3 /* ShellOut in Frameworks */ = {isa = PBXBuildFile; productRef = 26F2046D2541A4DC007D3AA3 /* ShellOut */; };
+		26F20473254233B7007D3AA3 /* AWSInstance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26F20472254233B7007D3AA3 /* AWSInstance.swift */; };
+		26F2047825423A9E007D3AA3 /* EC2Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26F2047725423A9E007D3AA3 /* EC2Parser.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,11 +44,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		263102E725432A9D00F4D7F0 /* AWSStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AWSStatus.swift; sourceTree = "<group>"; };
+		263102EF25432AB200F4D7F0 /* AWSInstanceType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AWSInstanceType.swift; sourceTree = "<group>"; };
+		263102FD25432B7200F4D7F0 /* JSONWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONWrapper.swift; sourceTree = "<group>"; };
+		2631030525432BB300F4D7F0 /* AWSParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AWSParser.swift; sourceTree = "<group>"; };
+		26870C1425432D8900D2659F /* MenuSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuSection.swift; sourceTree = "<group>"; };
+		26870C1C25432F7200D2659F /* EC2MenuSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EC2MenuSection.swift; sourceTree = "<group>"; };
 		26F204052540D9E3007D3AA3 /* awscontroller.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = awscontroller.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		26F204082540D9E3007D3AA3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		26F2040A2540D9E3007D3AA3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		26F2040C2540D9E4007D3AA3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		26F2040F2540D9E4007D3AA3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		26F204122540D9E4007D3AA3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		26F204142540D9E4007D3AA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		26F204152540D9E4007D3AA3 /* awscontroller.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = awscontroller.entitlements; sourceTree = "<group>"; };
@@ -48,6 +62,11 @@
 		26F204252540D9E4007D3AA3 /* awscontrollerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = awscontrollerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		26F204292540D9E4007D3AA3 /* awscontrollerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = awscontrollerUITests.swift; sourceTree = "<group>"; };
 		26F2042B2540D9E4007D3AA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		26F204502540E63D007D3AA3 /* PreferencesWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesWindow.swift; sourceTree = "<group>"; };
+		26F2045D2540F7E8007D3AA3 /* Preferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preferences.swift; sourceTree = "<group>"; };
+		26F204672541A373007D3AA3 /* CLIExecutor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLIExecutor.swift; sourceTree = "<group>"; };
+		26F20472254233B7007D3AA3 /* AWSInstance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AWSInstance.swift; sourceTree = "<group>"; };
+		26F2047725423A9E007D3AA3 /* EC2Parser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EC2Parser.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26F2046E2541A4DC007D3AA3 /* ShellOut in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,6 +95,46 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		263102E625432A7200F4D7F0 /* domain */ = {
+			isa = PBXGroup;
+			children = (
+				26F2045D2540F7E8007D3AA3 /* Preferences.swift */,
+				26F20472254233B7007D3AA3 /* AWSInstance.swift */,
+				263102E725432A9D00F4D7F0 /* AWSStatus.swift */,
+				263102EF25432AB200F4D7F0 /* AWSInstanceType.swift */,
+			);
+			path = domain;
+			sourceTree = "<group>";
+		};
+		263102FC25432B2F00F4D7F0 /* cli */ = {
+			isa = PBXGroup;
+			children = (
+				2631030A25432BEB00F4D7F0 /* parsers */,
+				26F204672541A373007D3AA3 /* CLIExecutor.swift */,
+				263102FD25432B7200F4D7F0 /* JSONWrapper.swift */,
+			);
+			path = cli;
+			sourceTree = "<group>";
+		};
+		2631030A25432BEB00F4D7F0 /* parsers */ = {
+			isa = PBXGroup;
+			children = (
+				26F2047725423A9E007D3AA3 /* EC2Parser.swift */,
+				2631030525432BB300F4D7F0 /* AWSParser.swift */,
+			);
+			path = parsers;
+			sourceTree = "<group>";
+		};
+		2631031125432CA100F4D7F0 /* gui */ = {
+			isa = PBXGroup;
+			children = (
+				26F204502540E63D007D3AA3 /* PreferencesWindow.swift */,
+				26870C1425432D8900D2659F /* MenuSection.swift */,
+				26870C1C25432F7200D2659F /* EC2MenuSection.swift */,
+			);
+			path = gui;
+			sourceTree = "<group>";
+		};
 		26F203FC2540D9E3007D3AA3 = {
 			isa = PBXGroup;
 			children = (
@@ -98,23 +158,16 @@
 		26F204072540D9E3007D3AA3 /* awscontroller */ = {
 			isa = PBXGroup;
 			children = (
+				2631031125432CA100F4D7F0 /* gui */,
+				263102FC25432B2F00F4D7F0 /* cli */,
+				263102E625432A7200F4D7F0 /* domain */,
 				26F204082540D9E3007D3AA3 /* AppDelegate.swift */,
-				26F2040A2540D9E3007D3AA3 /* ContentView.swift */,
 				26F2040C2540D9E4007D3AA3 /* Assets.xcassets */,
 				26F204112540D9E4007D3AA3 /* Main.storyboard */,
 				26F204142540D9E4007D3AA3 /* Info.plist */,
 				26F204152540D9E4007D3AA3 /* awscontroller.entitlements */,
-				26F2040E2540D9E4007D3AA3 /* Preview Content */,
 			);
 			path = awscontroller;
-			sourceTree = "<group>";
-		};
-		26F2040E2540D9E4007D3AA3 /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				26F2040F2540D9E4007D3AA3 /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 		26F2041D2540D9E4007D3AA3 /* awscontrollerTests */ = {
@@ -151,6 +204,9 @@
 			dependencies = (
 			);
 			name = awscontroller;
+			packageProductDependencies = (
+				26F2046D2541A4DC007D3AA3 /* ShellOut */,
+			);
 			productName = awscontroller;
 			productReference = 26F204052540D9E3007D3AA3 /* awscontroller.app */;
 			productType = "com.apple.product-type.application";
@@ -222,6 +278,9 @@
 				Base,
 			);
 			mainGroup = 26F203FC2540D9E3007D3AA3;
+			packageReferences = (
+				26F2046C2541A4DC007D3AA3 /* XCRemoteSwiftPackageReference "ShellOut" */,
+			);
 			productRefGroup = 26F204062540D9E3007D3AA3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -239,7 +298,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				26F204132540D9E4007D3AA3 /* Main.storyboard in Resources */,
-				26F204102540D9E4007D3AA3 /* Preview Assets.xcassets in Resources */,
 				26F2040D2540D9E4007D3AA3 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -265,8 +323,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				26F2040B2540D9E3007D3AA3 /* ContentView.swift in Sources */,
+				26F204512540E63D007D3AA3 /* PreferencesWindow.swift in Sources */,
+				2631030625432BB300F4D7F0 /* AWSParser.swift in Sources */,
+				263102E825432A9D00F4D7F0 /* AWSStatus.swift in Sources */,
+				26870C1D25432F7200D2659F /* EC2MenuSection.swift in Sources */,
+				263102F025432AB200F4D7F0 /* AWSInstanceType.swift in Sources */,
+				26F20473254233B7007D3AA3 /* AWSInstance.swift in Sources */,
+				26F2045E2540F7E8007D3AA3 /* Preferences.swift in Sources */,
+				26F204682541A373007D3AA3 /* CLIExecutor.swift in Sources */,
+				263102FE25432B7200F4D7F0 /* JSONWrapper.swift in Sources */,
+				26870C1525432D8900D2659F /* MenuSection.swift in Sources */,
 				26F204092540D9E3007D3AA3 /* AppDelegate.swift in Sources */,
+				26F2047825423A9E007D3AA3 /* EC2Parser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -436,7 +504,7 @@
 				CODE_SIGN_ENTITLEMENTS = awscontroller/awscontroller.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_ASSET_PATHS = "\"awscontroller/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = awscontroller/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -458,7 +526,7 @@
 				CODE_SIGN_ENTITLEMENTS = awscontroller/awscontroller.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_ASSET_PATHS = "\"awscontroller/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = awscontroller/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -592,6 +660,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		26F2046C2541A4DC007D3AA3 /* XCRemoteSwiftPackageReference "ShellOut" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/JohnSundell/ShellOut";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.3.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		26F2046D2541A4DC007D3AA3 /* ShellOut */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 26F2046C2541A4DC007D3AA3 /* XCRemoteSwiftPackageReference "ShellOut" */;
+			productName = ShellOut;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 26F203FD2540D9E3007D3AA3 /* Project object */;
 }
