@@ -15,6 +15,8 @@ class EC2MenuSection : MenuSection {
     var menuItems: [NSMenuItem]
     var offset: Int
     var awsInstances: [AWSInstance] = []
+    var isRefreshing = false
+    var refreshingFinishedCallback = {}
     
     required init (menu: NSMenu!, offset: Int, cli: CLIExecutor) {
         self.cli = cli
@@ -25,28 +27,43 @@ class EC2MenuSection : MenuSection {
         menu.insertItem(self.statusItem, at: offset)
     }
 
-    func refresh(_ sender: AnyObject) {
+    func refresh(_ sender: AnyObject, callback: @escaping () -> ()) {
         print("refresh...")
-        let settings = Preferences.fromUserDefaults(settings: UserDefaults.standard, profileList: cli.getProfiles())
+        refreshingFinishedCallback = callback
+        isRefreshing = true
+        self.cli.getProfiles(callback: continueRefreshing)
+    }
+    
+    func continueRefreshing(profilesList: [String]) {
+        let settings = Preferences.fromUserDefaults(settings: UserDefaults.standard, profileList: profilesList)
         self.statusItem.title = "EC2 (profile: " + settings.selectedProfile + ")"
         self.statusItem.isEnabled = false
-        self.awsInstances = cli.getEC2Instances(profile: settings.selectedProfile)
+        self.cli.getEC2Instances(profile: settings.selectedProfile, callback: continueWithInstances)
+
+    }
+    
+    func continueWithInstances(instances: [AWSInstance]) {
+        self.awsInstances = instances
         
-        menuItems.forEach({
+        self.menuItems.forEach({
             item in
             self.menu.removeItem(item)
         })
         
-        menuItems.removeAll()
+        self.menuItems.removeAll()
         
-        awsInstances.forEach({
+        self.awsInstances.forEach({
             aws in
             let item = NSMenuItem(title: aws.getTitle(), action: nil, keyEquivalent: "")
-            item.submenu = getSubmenuForInstance(aws: aws)
-            menuItems.append(item)
-            menu.insertItem(item, at: offset + menuItems.count)
+            item.submenu = self.getSubmenuForInstance(aws: aws)
+            self.menuItems.append(item)
+            self.menu.insertItem(item, at: self.offset + self.menuItems.count)
         })
+        
+        isRefreshing = false
+        refreshingFinishedCallback()
     }
+    
     
     func getSubmenuForInstance(aws: AWSInstance) -> NSMenu? {
         let result = NSMenu()
@@ -77,16 +94,16 @@ class EC2MenuSection : MenuSection {
     
     @objc func startEC2Instance(_ sender: NSMenuItem) {
         let instance = awsInstances.first(where: {aws in aws.id == sender.tag})
-        self.cli.startEC2Instance(instance: instance!)
+        self.cli.startEC2Instance(instance: instance!, callback: {})
     }
     
     @objc func restartEC2Instance(_ sender: NSMenuItem) {
         let instance = awsInstances.first(where: {aws in aws.id == sender.tag})
-        self.cli.restartEC2Instance(instance: instance!)
+        self.cli.restartEC2Instance(instance: instance!, callback: {})
     }
     
     @objc func stopEC2Instance(_ sender: NSMenuItem) {
         let instance = awsInstances.first(where: {aws in aws.id == sender.tag})
-        self.cli.stopEC2Instance(instance: instance!)
+        self.cli.stopEC2Instance(instance: instance!, callback: {})
     }
 }

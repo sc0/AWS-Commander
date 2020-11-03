@@ -14,8 +14,9 @@ protocol MenuSection {
     var statusItem: NSMenuItem { get }
     var menuItems: [NSMenuItem] { get }
     var offset: Int { get set }
+    var isRefreshing: Bool { get }
     
     init(menu: NSMenu!, offset: Int, cli: CLIExecutor)
     
-    func refresh(_ sender: AnyObject) -> Void
+    func refresh(_ sender: AnyObject, callback: @escaping () -> ()) -> Void
 }

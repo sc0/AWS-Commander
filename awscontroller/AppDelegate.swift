@@ -50,13 +50,36 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     
     
     @IBAction func refresh(_ sender: AnyObject) {
+        setRefreshingAnimation()
         menuSections.forEach({
-            section in section.refresh(self)
+            section in
+            section.refresh(self, callback: refreshFinished)
         })
         
-        let formatter = DateFormatter()
-        formatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
-        lastSyncMenuItem.title = "Last sync: \(formatter.string(from: NSDate.now))"
+        
+    }
+    
+    func setRefreshingAnimation() {
+        statusBarItem.button?.title = "🔃"
+        statusBarItem.menu = nil
+    }
+    
+    func unsetRefreshingAnimation() {
+        statusBarItem.button?.title = "💣"
+        statusBarItem.menu = menu
+    }
+    
+    func refreshFinished() {
+        var allRefreshed = true
+        menuSections.forEach({ section in allRefreshed = allRefreshed && !section.isRefreshing })
+        
+        if allRefreshed {
+            let formatter = DateFormatter()
+            formatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
+            lastSyncMenuItem.title = "Last sync: \(formatter.string(from: NSDate.now))"
+            
+            unsetRefreshingAnimation()
+        }
     }
     
     
@@ -76,16 +99,18 @@ class AppDelegate: NSObject, NSApplicationDelegate {
                 self.preferenceWindow = nil
                 self.refresh(self)
             }
-            
-            prefWindow.contentViewController =
-                NSHostingController(rootView: PreferencesWindow(settings:
-                                                                    Preferences.fromUserDefaults(
-                                                                        settings: UserDefaults.standard,
-                                                                        profileList: self.cli.getProfiles()),
-                                                                saveAction: saveAction))
-            
-            prefWindow.makeKeyAndOrderFront(self)
-            self.preferenceWindow = prefWindow
+            self.cli.getProfiles(callback: {
+                profiles in
+                prefWindow.contentViewController =
+                    NSHostingController(rootView: PreferencesWindow(settings:
+                                                                        Preferences.fromUserDefaults(
+                                                                            settings: UserDefaults.standard,
+                                                                            profileList: profiles),
+                                                                    saveAction: saveAction))
+                
+                prefWindow.makeKeyAndOrderFront(self)
+                self.preferenceWindow = prefWindow
+            })
         }
     }
     

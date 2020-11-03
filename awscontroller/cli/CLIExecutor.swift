@@ -13,75 +13,82 @@ class CLIExecutor {
     
     let standardFlags = ["--output", "json", "--no-cli-pager"]
     
-    func getProfiles() -> [String] {
-        do {
-            let output = try shellOut(to: "/usr/local/bin/aws", arguments: ["configure", "list-profiles"])
-            let profiles = output.components(separatedBy: "\n")
-            return profiles
-        } catch {
-            let error = error as! ShellOutError
-            print(error.message)
-            print(error.output)
-            return []
+    func getProfiles(callback: @escaping ([String]) -> ()) {
+        DispatchQueue.global(qos: .background).async {
+            do {
+                let output = try shellOut(to: "/usr/local/bin/aws", arguments: ["configure", "list-profiles"])
+                let profiles = output.components(separatedBy: "\n")
+                callback(profiles)
+            } catch {
+                let error = error as! ShellOutError
+                print(error.message)
+                print(error.output)
+                callback([])
+            }
         }
     }
     
-    func getEC2Instances(profile: String) -> [AWSInstance] {
-        do {
-            let output = try shellOut(to: "/usr/local/bin/aws", arguments: ["ec2", "describe-instances", "--profile", profile] + standardFlags)
-            let instances = ec2Parser.parse(json: output, profile: profile)
-            return instances
-        } catch {
-            let error = error as! ShellOutError
-            print(error.message)
-            print(error.output)
-            return []
+    func getEC2Instances(profile: String, callback: @escaping ([AWSInstance]) -> ()) {
+        DispatchQueue.global(qos: .background).async {
+            do {
+                let output = try shellOut(to: "/usr/local/bin/aws", arguments: ["ec2", "describe-instances", "--profile", profile] + self.standardFlags)
+                let instances = self.ec2Parser.parse(json: output, profile: profile)
+                callback(instances)
+            } catch {
+                let error = error as! ShellOutError
+                print(error.message)
+                print(error.output)
+                callback([])
+            }
         }
+        
     }
     
-    func startEC2Instance(instance: AWSInstance) -> Bool {
+    func startEC2Instance(instance: AWSInstance, callback: @escaping () -> ()) {
         print("Starting \(instance.name)...")
-        
-        do {
-            let output = try shellOut(to: "/usr/local/bin/aws", arguments: ["ec2", "start-instances", "--profile", instance.profile] + standardFlags + [ "--instance-ids", instance.identifer])
-            print(output)
-            return true
-        } catch {
-            let error = error as! ShellOutError
-            print(error.message)
-            print(error.output)
-            return false
+        DispatchQueue.global(qos: .background).async {
+            do {
+                let output = try shellOut(to: "/usr/local/bin/aws", arguments: ["ec2", "start-instances", "--profile", instance.profile] + self.standardFlags + [ "--instance-ids", instance.identifer])
+                print(output)
+                callback()
+            } catch {
+                let error = error as! ShellOutError
+                print(error.message)
+                print(error.output)
+                callback()
+            }
         }
     }
     
-    func restartEC2Instance(instance: AWSInstance) -> Bool {
+    func restartEC2Instance(instance: AWSInstance, callback: @escaping () -> ()) {
         print("Restarting \(instance.name)...")
-        
-        do {
-            let output = try shellOut(to: "/usr/local/bin/aws", arguments: ["ec2", "reboot-instances", "--profile", instance.profile] + standardFlags + [ "--instance-ids", instance.identifer])
-            print(output)
-            return true
-        } catch {
-            let error = error as! ShellOutError
-            print(error.message)
-            print(error.output)
-            return false
+        DispatchQueue.global(qos: .background).async {
+            do {
+                let output = try shellOut(to: "/usr/local/bin/aws", arguments: ["ec2", "reboot-instances", "--profile", instance.profile] + self.standardFlags + [ "--instance-ids", instance.identifer])
+                print(output)
+                callback()
+            } catch {
+                let error = error as! ShellOutError
+                print(error.message)
+                print(error.output)
+                callback()
+            }
         }
-        
     }
     
-    func stopEC2Instance(instance: AWSInstance) -> Bool {
+    func stopEC2Instance(instance: AWSInstance, callback: @escaping () -> ()) {
         print("Stopping \(instance.name)...")
-        
-        do {
-            let output = try shellOut(to: "/usr/local/bin/aws", arguments: ["ec2", "stop-instances", "--profile", instance.profile] + standardFlags + [ "--instance-ids", instance.identifer])
-            print(output)
-            return true
-        } catch {
-            let error = error as! ShellOutError
-            print(error.message)
-            print(error.output)
-            return false
+        DispatchQueue.global(qos: .background).async {
+            do {
+                let output = try shellOut(to: "/usr/local/bin/aws", arguments: ["ec2", "stop-instances", "--profile", instance.profile] + self.standardFlags + [ "--instance-ids", instance.identifer])
+                print(output)
+                callback()
+            } catch {
+                let error = error as! ShellOutError
+                print(error.message)
+                print(error.output)
+                callback()
+            }
         }
     }
 }
