@@ -6,3 +6,16 @@
 //
 
 import Foundation
+import Cocoa
+
+protocol MenuSection {
+    var cli: CLIExecutor { get }
+    var menu: NSMenu! { get }
+    var statusItem: NSMenuItem { get }
+    var menuItems: [NSMenuItem] { get }
+    var offset: Int { get set }
+    
+    init(menu: NSMenu!, offset: Int, cli: CLIExecutor)
+    
+    func refresh(_ sender: AnyObject) -> Void
+}

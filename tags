@@ -1,0 +1,94 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_FILESEP	slash	/slash or backslash/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PATTERN_LENGTH_LIMIT	96	/0 for no limit/
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	5.9.0	/663bfb1/
+0	awscontroller/Assets.xcassets/AccentColor.colorset/Contents.json	/^    {$/;"	o	array:colors
+0	awscontroller/Assets.xcassets/AppIcon.appiconset/Contents.json	/^    {$/;"	o	array:images
+1	awscontroller/Assets.xcassets/AppIcon.appiconset/Contents.json	/^    {$/;"	o	array:images
+2	awscontroller/Assets.xcassets/AppIcon.appiconset/Contents.json	/^    {$/;"	o	array:images
+3	awscontroller/Assets.xcassets/AppIcon.appiconset/Contents.json	/^    {$/;"	o	array:images
+4	awscontroller/Assets.xcassets/AppIcon.appiconset/Contents.json	/^    {$/;"	o	array:images
+5	awscontroller/Assets.xcassets/AppIcon.appiconset/Contents.json	/^    {$/;"	o	array:images
+6	awscontroller/Assets.xcassets/AppIcon.appiconset/Contents.json	/^    {$/;"	o	array:images
+7	awscontroller/Assets.xcassets/AppIcon.appiconset/Contents.json	/^    {$/;"	o	array:images
+8	awscontroller/Assets.xcassets/AppIcon.appiconset/Contents.json	/^    {$/;"	o	array:images
+9	awscontroller/Assets.xcassets/AppIcon.appiconset/Contents.json	/^    {$/;"	o	array:images
+CFBundleDevelopmentRegion	awscontroller/Info.plist	/^	<key>CFBundleDevelopmentRegion<\/key>$/;"	k
+CFBundleDevelopmentRegion	awscontrollerTests/Info.plist	/^	<key>CFBundleDevelopmentRegion<\/key>$/;"	k
+CFBundleDevelopmentRegion	awscontrollerUITests/Info.plist	/^	<key>CFBundleDevelopmentRegion<\/key>$/;"	k
+CFBundleExecutable	awscontroller/Info.plist	/^	<key>CFBundleExecutable<\/key>$/;"	k
+CFBundleExecutable	awscontrollerTests/Info.plist	/^	<key>CFBundleExecutable<\/key>$/;"	k
+CFBundleExecutable	awscontrollerUITests/Info.plist	/^	<key>CFBundleExecutable<\/key>$/;"	k
+CFBundleIconFile	awscontroller/Info.plist	/^	<key>CFBundleIconFile<\/key>$/;"	k
+CFBundleIdentifier	awscontroller/Info.plist	/^	<key>CFBundleIdentifier<\/key>$/;"	k
+CFBundleIdentifier	awscontrollerTests/Info.plist	/^	<key>CFBundleIdentifier<\/key>$/;"	k
+CFBundleIdentifier	awscontrollerUITests/Info.plist	/^	<key>CFBundleIdentifier<\/key>$/;"	k
+CFBundleInfoDictionaryVersion	awscontroller/Info.plist	/^	<key>CFBundleInfoDictionaryVersion<\/key>$/;"	k
+CFBundleInfoDictionaryVersion	awscontrollerTests/Info.plist	/^	<key>CFBundleInfoDictionaryVersion<\/key>$/;"	k
+CFBundleInfoDictionaryVersion	awscontrollerUITests/Info.plist	/^	<key>CFBundleInfoDictionaryVersion<\/key>$/;"	k
+CFBundleName	awscontroller/Info.plist	/^	<key>CFBundleName<\/key>$/;"	k
+CFBundleName	awscontrollerTests/Info.plist	/^	<key>CFBundleName<\/key>$/;"	k
+CFBundleName	awscontrollerUITests/Info.plist	/^	<key>CFBundleName<\/key>$/;"	k
+CFBundlePackageType	awscontroller/Info.plist	/^	<key>CFBundlePackageType<\/key>$/;"	k
+CFBundlePackageType	awscontrollerTests/Info.plist	/^	<key>CFBundlePackageType<\/key>$/;"	k
+CFBundlePackageType	awscontrollerUITests/Info.plist	/^	<key>CFBundlePackageType<\/key>$/;"	k
+CFBundleShortVersionString	awscontroller/Info.plist	/^	<key>CFBundleShortVersionString<\/key>$/;"	k
+CFBundleShortVersionString	awscontrollerTests/Info.plist	/^	<key>CFBundleShortVersionString<\/key>$/;"	k
+CFBundleShortVersionString	awscontrollerUITests/Info.plist	/^	<key>CFBundleShortVersionString<\/key>$/;"	k
+CFBundleVersion	awscontroller/Info.plist	/^	<key>CFBundleVersion<\/key>$/;"	k
+CFBundleVersion	awscontrollerTests/Info.plist	/^	<key>CFBundleVersion<\/key>$/;"	k
+CFBundleVersion	awscontrollerUITests/Info.plist	/^	<key>CFBundleVersion<\/key>$/;"	k
+IDEDidComputeMac32BitWarning	awscontroller.xcodeproj/project.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist	/^	<key>IDEDidComputeMac32BitWarning<\/key>$/;"	k
+LSMinimumSystemVersion	awscontroller/Info.plist	/^	<key>LSMinimumSystemVersion<\/key>$/;"	k
+NSMainStoryboardFile	awscontroller/Info.plist	/^	<key>NSMainStoryboardFile<\/key>$/;"	k
+NSPrincipalClass	awscontroller/Info.plist	/^	<key>NSPrincipalClass<\/key>$/;"	k
+SchemeUserState	awscontroller.xcodeproj/xcuserdata/kacperdebowski.xcuserdatad/xcschemes/xcschememanagement.plist	/^	<key>SchemeUserState<\/key>$/;"	k
+author	awscontroller/Assets.xcassets/AccentColor.colorset/Contents.json	/^    "author" : "xcode",$/;"	s	object:info
+author	awscontroller/Assets.xcassets/AppIcon.appiconset/Contents.json	/^    "author" : "xcode",$/;"	s	object:info
+author	awscontroller/Assets.xcassets/Contents.json	/^    "author" : "xcode",$/;"	s	object:info
+awscontroller.xcscheme_^#shared#^_	awscontroller.xcodeproj/xcuserdata/kacperdebowski.xcuserdatad/xcschemes/xcschememanagement.plist	/^		<key>awscontroller.xcscheme_^#shared#^_<\/key>$/;"	k	key:SchemeUserState
+colors	awscontroller/Assets.xcassets/AccentColor.colorset/Contents.json	/^  "colors" : [$/;"	a
+idiom	awscontroller/Assets.xcassets/AccentColor.colorset/Contents.json	/^      "idiom" : "universal"$/;"	s	object:colors.0
+idiom	awscontroller/Assets.xcassets/AppIcon.appiconset/Contents.json	/^      "idiom" : "mac",$/;"	s	object:images.0
+idiom	awscontroller/Assets.xcassets/AppIcon.appiconset/Contents.json	/^      "idiom" : "mac",$/;"	s	object:images.1
+idiom	awscontroller/Assets.xcassets/AppIcon.appiconset/Contents.json	/^      "idiom" : "mac",$/;"	s	object:images.2
+idiom	awscontroller/Assets.xcassets/AppIcon.appiconset/Contents.json	/^      "idiom" : "mac",$/;"	s	object:images.3
+idiom	awscontroller/Assets.xcassets/AppIcon.appiconset/Contents.json	/^      "idiom" : "mac",$/;"	s	object:images.4
+idiom	awscontroller/Assets.xcassets/AppIcon.appiconset/Contents.json	/^      "idiom" : "mac",$/;"	s	object:images.5
+idiom	awscontroller/Assets.xcassets/AppIcon.appiconset/Contents.json	/^      "idiom" : "mac",$/;"	s	object:images.6
+idiom	awscontroller/Assets.xcassets/AppIcon.appiconset/Contents.json	/^      "idiom" : "mac",$/;"	s	object:images.7
+idiom	awscontroller/Assets.xcassets/AppIcon.appiconset/Contents.json	/^      "idiom" : "mac",$/;"	s	object:images.8
+idiom	awscontroller/Assets.xcassets/AppIcon.appiconset/Contents.json	/^      "idiom" : "mac",$/;"	s	object:images.9
+images	awscontroller/Assets.xcassets/AppIcon.appiconset/Contents.json	/^  "images" : [$/;"	a
+info	awscontroller/Assets.xcassets/AccentColor.colorset/Contents.json	/^  "info" : {$/;"	o
+info	awscontroller/Assets.xcassets/AppIcon.appiconset/Contents.json	/^  "info" : {$/;"	o
+info	awscontroller/Assets.xcassets/Contents.json	/^  "info" : {$/;"	o
+orderHint	awscontroller.xcodeproj/xcuserdata/kacperdebowski.xcuserdatad/xcschemes/xcschememanagement.plist	/^			<key>orderHint<\/key>$/;"	k	key:SchemeUserState.awscontroller.xcscheme_^#shared#^_
+scale	awscontroller/Assets.xcassets/AppIcon.appiconset/Contents.json	/^      "scale" : "1x",$/;"	s	object:images.0
+scale	awscontroller/Assets.xcassets/AppIcon.appiconset/Contents.json	/^      "scale" : "1x",$/;"	s	object:images.2
+scale	awscontroller/Assets.xcassets/AppIcon.appiconset/Contents.json	/^      "scale" : "1x",$/;"	s	object:images.4
+scale	awscontroller/Assets.xcassets/AppIcon.appiconset/Contents.json	/^      "scale" : "1x",$/;"	s	object:images.6
+scale	awscontroller/Assets.xcassets/AppIcon.appiconset/Contents.json	/^      "scale" : "1x",$/;"	s	object:images.8
+scale	awscontroller/Assets.xcassets/AppIcon.appiconset/Contents.json	/^      "scale" : "2x",$/;"	s	object:images.1
+scale	awscontroller/Assets.xcassets/AppIcon.appiconset/Contents.json	/^      "scale" : "2x",$/;"	s	object:images.3
+scale	awscontroller/Assets.xcassets/AppIcon.appiconset/Contents.json	/^      "scale" : "2x",$/;"	s	object:images.5
+scale	awscontroller/Assets.xcassets/AppIcon.appiconset/Contents.json	/^      "scale" : "2x",$/;"	s	object:images.7
+scale	awscontroller/Assets.xcassets/AppIcon.appiconset/Contents.json	/^      "scale" : "2x",$/;"	s	object:images.9
+size	awscontroller/Assets.xcassets/AppIcon.appiconset/Contents.json	/^      "size" : "128x128"$/;"	s	object:images.4
+size	awscontroller/Assets.xcassets/AppIcon.appiconset/Contents.json	/^      "size" : "128x128"$/;"	s	object:images.5
+size	awscontroller/Assets.xcassets/AppIcon.appiconset/Contents.json	/^      "size" : "16x16"$/;"	s	object:images.0
+size	awscontroller/Assets.xcassets/AppIcon.appiconset/Contents.json	/^      "size" : "16x16"$/;"	s	object:images.1
+size	awscontroller/Assets.xcassets/AppIcon.appiconset/Contents.json	/^      "size" : "256x256"$/;"	s	object:images.6
+size	awscontroller/Assets.xcassets/AppIcon.appiconset/Contents.json	/^      "size" : "256x256"$/;"	s	object:images.7
+size	awscontroller/Assets.xcassets/AppIcon.appiconset/Contents.json	/^      "size" : "32x32"$/;"	s	object:images.2
+size	awscontroller/Assets.xcassets/AppIcon.appiconset/Contents.json	/^      "size" : "32x32"$/;"	s	object:images.3
+size	awscontroller/Assets.xcassets/AppIcon.appiconset/Contents.json	/^      "size" : "512x512"$/;"	s	object:images.8
+size	awscontroller/Assets.xcassets/AppIcon.appiconset/Contents.json	/^      "size" : "512x512"$/;"	s	object:images.9
+version	awscontroller/Assets.xcassets/AccentColor.colorset/Contents.json	/^    "version" : 1$/;"	n	object:info
+version	awscontroller/Assets.xcassets/AppIcon.appiconset/Contents.json	/^    "version" : 1$/;"	n	object:info
+version	awscontroller/Assets.xcassets/Contents.json	/^    "version" : 1$/;"	n	object:info
